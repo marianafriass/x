@@ -1,0 +1,34 @@
+Pruebas con Multimetro
+
+CONTINUIDAD (Con la fuente de poder APAGADA y el driver DESCONECTADO)
+
+- Toca el cable positivo y el negativo que vienen de tu fuente de 9V, no debe pitar. Si pita, tienes un corto en los cables y no debes prender la fuente de poder
+- En el driver revisa gnd junto con VM/VIO, no debe de pitar, si pita no lo conectes
+
+PASOS PARA CONECTAR TODO
+
+1. todo apagado y desconectado de cualquier fuente de voltaje (no fuente de poder, no usb al esp)
+2. conectar tierras (GND) y capacitores.
+   - pon los capacitores de 100µF en su lugar (patita larga al positivo de 12V, patita corta a GND), exactamente donde irán conectados los drivers.
+3. conectar los drivers (SIN MOTORES AÚN)
+- coloca los TMC2209 en su lugar. Fíjate muy bien en la orientación (el pin EN del driver debe coincidir con el cable que va al pin D7 o D0 de tu ESP) *Poner el driver al revés lo quema al instante*
+4. calibrar la Corriente (VREF el tornillo)
+   - cambia tu multímetro a Voltaje Directo y ponlo en la escala de 20V 
+   - enciende el ESP8266 (conéctalo por USB) y enciende la fuente de 12V
+   - pon la punta negra del multímetro en cualquier GND de tu placa
+   - pon la punta roja tocando directamente el tornillo de metal del driver TMC2209.
+   - el multímetro te dará un número, para motores NEMA 17 normales necesitas que ese número esté entre 0.8V y 1.2V.
+   - si está muy alto o muy bajo, usa un destornillador pequeño para girar el tornillo milimétricamente. Vuelve a medir y repite hasta que marque 1.0V.
+5. Apagar y conectar motores
+   - APAGA TODO, desconecta la fuente de 12V y el USB del ESP8266.
+   - conecta los 4 cables de tus motores a los drivers.
+6. Encendido con todas las conexiones
+   - enciende primero el ESP8266 y sube el codigo de arduino
+- enciende después la potencia (Fuente de 12V) y carga tu frontend 
+
+3 NUNCAS QUE NOS VAN A SALVAR
+
+- NUNCA conectes ni desconectes un motor mientras haya corriente (ya sea del esp o de la fuente de poder):
+    Si el driver está encendido y sacas el cable del motor, el chip interno explota. Siempre corta la corriente antes de tocar los cables del motor o de cualquier otra cosa
+- NUNCA enciendas la fuente de 12V sin los capacitores puestos
+- NUNCA dejes el VREF (tornillo) sin ajustar. Si viene de fábrica en 2.5V, el motor va a hervir y el driver se va a apagar por protección térmica en 10 segundos.
