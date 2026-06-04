@@ -32,3 +32,10 @@ PASOS PARA CONECTAR TODO
     Si el driver está encendido y sacas el cable del motor, el chip interno explota. Siempre corta la corriente antes de tocar los cables del motor o de cualquier otra cosa
 - NUNCA enciendas la fuente de 12V sin los capacitores puestos
 - NUNCA dejes el VREF (tornillo) sin ajustar. Si viene de fábrica en 2.5V, el motor va a hervir y el driver se va a apagar por protección térmica en 10 segundos.
+
+
+https://www.google.com/search?q=esp8266+pinout&oq=esp8266&gs_lcrp=EgZjaHJvbWUqDAgBEAAYQxiABBiKBTIUCAAQRRg7GEMYgwEYsQMYgAQYigUyDAgBEAAYQxiABBiKBTIMCAIQABhDGIAEGIoFMgwIAxAAGEMYgAQYigUyDAgEEAAYQxiABBiKBTIHCAUQABiABDIMCAYQABhDGIAEGIoFMgwIBxAAGEMYgAQYigUyBwgIEAAYgATSAQg1Mjk5ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8#sv=CAMSNhowKg4wOHBfX1ZFUVhQYWcwTTIOMDhwX19WRVFYUGFnME06DkFUQ1gyRXNVUmItWlFNIAQ4ABgHIJOK3KEESggQARgBIAEoAQ
+
+https://www.youtube.com/watch?v=Wc9ukHsf9R4
+
+https://www.google.com/search?sca_esv=a529a2a8a6f6b8b1&sxsrf=ANbL-n66RzyY-ojdvGnk_eS5oNJeZmajQg:1780353413776&udm=2&fbs=ADc_l-bpk8W4E-qsVlOvbGJcDwpn60DczFdcvPnuv8WQohHLTcTH442KskDyC74HpRHrYUorhqIWu6eEEK7aBAtTZpD8FGIRodoPqvttwyiKvOFEHWAhyv94lxHwkjGugnhuTuLlzEsEt3IgnX1_U16osujGkMhzeKyK8IWMgYRd1UJRtFCgmGpD0UFum387oWLTOJUSiGYdIMqkU_xoGeOooSWAbb0DkA&q=tcm2209+datasheet&sa=X&ved=2ahUKEwiY4rWmjeeUAxWfmSYFHdG8L3wQtKgLegQIExAB&biw=1536&bih=791&dpr=1.25#sv=CAMSWBoyKhBlLVR4YmQ5LTlLOVAySVZNMg5UeGJkOS05SzlQMklWTToONF96YldlRXdJcXo2T00gBCocCgZtb3NhaWMSEGUtVHhiZDktOUs5UDJJVk0YADABOAAYByCfha_MCEoIEAEYASABKAE
